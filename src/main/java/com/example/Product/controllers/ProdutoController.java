@@ -1,6 +1,8 @@
 package com.example.Product.controllers;
 
+import com.example.Product.Errors.InternalServerError;
 import com.example.Product.business.ProdutoBusiness;
+import com.example.Product.model.ProdutoDao;
 import com.example.Product.model.dto.ProdutoDto;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,8 +21,13 @@ public class ProdutoController {
     }
 
     @GetMapping("/{id}")
-    public ProdutoDto getProduto(@PathVariable String id) {
+    public ProdutoDto getProduto(@PathVariable Integer id) {
         return ProdutoBusiness.getProdutoRequest(id);
+    }
+
+    @PostMapping("")
+    public ProdutoDto postProduto(@RequestBody ProdutoDto produto) {
+        return ProdutoBusiness.criarProduto(produto);
     }
 
 }

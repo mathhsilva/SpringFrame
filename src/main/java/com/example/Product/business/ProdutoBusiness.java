@@ -2,14 +2,11 @@ package com.example.Product.business;
 
 import br.framework.interfaces.IConnection;
 import com.example.Product.Errors.InternalServerError;
-import com.example.Product.Errors.ValidationException;
 import com.example.Product.helper.ConnectionManager;
 import com.example.Product.model.ProdutoDao;
 import com.example.Product.model.ProdutoDaoImpl;
 import com.example.Product.model.dto.ProdutoDto;
 import com.example.Product.model.entity.Produto;
-import com.google.api.client.json.Json;
-import com.google.gson.Gson;
 import org.springframework.http.ResponseEntity;
 
 import java.sql.SQLException;
@@ -30,14 +27,36 @@ public class ProdutoBusiness {
         return null;
     }
 
-    public static void criarProduto() {
+    public static ProdutoDto criarProduto(ProdutoDto novoProduto) {
+        try {
+            IConnection connection = ConnectionManager.newConnection();
+            try {
+                ProdutoBusiness business = new ProdutoBusiness(connection);
+                Produto produto = new Produto();
+                produto.getId().setValue(novoProduto.getId());
+                produto.getName().setValue(novoProduto.getName());
+                produto.getPrice().setValue(novoProduto.getPrice());
+                business.save(produto);
+                return novoProduto;
+            } finally {
+              connection.close();
+            }
+        } catch (Exception e) {
+             e.printStackTrace();
+             throw new InternalServerError(e.getMessage());
+        }
+
     }
 
-    private Produto getProduto(String id) throws Exception {
+    private void save(Produto produto) throws Exception {
+        this.dao.save(produto);
+    }
+
+    private Produto getProduto(Integer id) throws Exception {
         return this.dao.getProduto(id);
     }
 
-    public static ProdutoDto getProdutoRequest(String id) {
+    public static ProdutoDto getProdutoRequest(Integer id) {
         try {
             IConnection connection = ConnectionManager.newConnection();
             try {

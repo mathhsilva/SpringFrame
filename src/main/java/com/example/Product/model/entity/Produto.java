@@ -6,6 +6,7 @@ import br.framework.classes.DataBase.EntityClass;
 import br.framework.classes.DataBase.fields.Description;
 import br.framework.classes.DataBase.fields.FloatField;
 import br.framework.classes.DataBase.fields.Numeric;
+import com.example.Product.model.dto.ProdutoDto;
 import jakarta.persistence.GeneratedValue;
 import lombok.Getter;
 import lombok.Setter;
@@ -33,6 +34,5 @@ public class Produto extends EntityClass {
 
     @Override
     public void setupFields() {
-
     }
 }

@@ -20,4 +20,7 @@ public class ProdutoDto {
         this.name = produto.getName().getValue();
         this.price = produto.getPrice().getValue();
     }
+
+    public ProdutoDto() {
+    }
 }

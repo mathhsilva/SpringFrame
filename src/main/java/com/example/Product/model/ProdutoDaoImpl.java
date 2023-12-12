@@ -25,13 +25,13 @@ public class ProdutoDaoImpl implements ProdutoDao{
     }
 
     @Override
-    public Produto getProduto(String id) throws Exception {
+    public Produto getProduto(Integer id) throws Exception {
         return this.manager.findById(Produto.class, id);
     }
 
     @Override
     public void save(Produto produto) throws Exception {
-        Produto produtoDb = this.getProduto(String.valueOf(produto.getId().getValue()));
+        Produto produtoDb = this.getProduto(produto.getId().getValue());
         if (produtoDb != null) {
             produtoDb.setOperation(Types.Operations.Update);
             produtoDb.setCondition("id = " + produto.getId().getValue());
@@ -48,5 +48,10 @@ public class ProdutoDaoImpl implements ProdutoDao{
         this.connection.getNewTransaction()
                        .addEntity(produto)
                        .commit();
+    }
+
+    @Override
+    public void insert(Produto produto) throws Exception {
+
     }
 }
