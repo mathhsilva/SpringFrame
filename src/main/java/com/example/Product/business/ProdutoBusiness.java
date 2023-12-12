@@ -57,7 +57,7 @@ public class ProdutoBusiness {
         produtos.stream().forEach(produto -> result.add(new ProdutoDto(produto)));
         return result;
     }
-    public static List <ProdutoDto> getProdutosRequest(){
+    public static List<ProdutoDto> getProdutosRequest(){
         try {
             IConnection connection = ConnectionManager.newConnection();
             try {

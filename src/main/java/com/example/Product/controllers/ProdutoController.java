@@ -25,7 +25,7 @@ public class ProdutoController {
 
     @PostMapping("")
     public ResponseEntity<String> criarProduto(@RequestBody ProdutoDto novoPoroduto) {
-        return  ProdutoBusiness.getProdutoRequest();
+        return  ResponseEntity.ok().build();
     }
 
 }

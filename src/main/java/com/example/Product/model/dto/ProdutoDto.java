@@ -1,5 +1,6 @@
 package com.example.Product.model.dto;
 
+import br.framework.classes.helpers.Types;
 import com.example.Product.model.entity.Produto;
 import lombok.Getter;
 import lombok.Setter;
@@ -19,5 +20,4 @@ public class ProdutoDto {
         this.name = produto.getName().getValue();
         this.price = produto.getPrice().getValue();
     }
-
 }

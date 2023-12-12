@@ -1,0 +1,38 @@
+2023-12-12 08:31:50.637 | com.example.Product.ServerInitializer.init(ServerInitializer.java:81) |  - [info]: Inicializando Aplicação
+2023-12-12 08:31:50.648 | com.example.Product.ServerInitializer.buildConfiguration(ServerInitializer.java:40) |  - [info]: Carregando configurações
+2023-12-12 08:31:50.658 | com.example.Product.ServerInitializer.buildConfiguration(ServerInitializer.java:42) |  - [info]: Configurações carregadas
+2023-12-12 08:31:50.658 | com.example.Product.ServerInitializer.buildConfiguration(ServerInitializer.java:43) |  - [info]: Versão: 2.0.0.05
+2023-12-12 08:31:50.659 | com.example.Product.ServerInitializer.logConfig(ServerInitializer.java:49) |  - [info]: db.type: Postgres
+2023-12-12 08:31:50.659 | com.example.Product.ServerInitializer.logConfig(ServerInitializer.java:50) |  - [info]: db.host: localhost
+2023-12-12 08:31:50.659 | com.example.Product.ServerInitializer.logConfig(ServerInitializer.java:51) |  - [info]: db.port: 5433
+2023-12-12 08:31:50.660 | com.example.Product.ServerInitializer.logConfig(ServerInitializer.java:52) |  - [info]: db.name: postgres
+2023-12-12 08:31:50.660 | com.example.Product.ServerInitializer.logConfig(ServerInitializer.java:53) |  - [info]: db.user: postgres
+2023-12-12 08:31:50.660 | com.example.Product.ServerInitializer.logConfig(ServerInitializer.java:54) |  - [info]: db.tnsName: null
+2023-12-12 08:31:50.661 | com.example.Product.ServerInitializer.logConfig(ServerInitializer.java:55) |  - [info]: db.serviceName: 
+2023-12-12 08:31:50.661 | com.example.Product.ServerInitializer.logConfig(ServerInitializer.java:56) |  - [info]: db.instance: 
+2023-12-12 08:31:50.661 | com.example.Product.ServerInitializer.logConfig(ServerInitializer.java:57) |  - [info]: db.maxConnections: 5
+2023-12-12 08:31:50.662 | com.example.Product.ServerInitializer.logParalelismConfig(ServerInitializer.java:65) |  - [info]: Máximo de conexões: 5
+2023-12-12 08:31:50.662 | com.example.Product.ServerInitializer.logParalelismConfig(ServerInitializer.java:66) |  - [info]: Núcleos lógicos: 4
+2023-12-12 08:31:50.662 | com.example.Product.ServerInitializer.buildConnections(ServerInitializer.java:75) |  - [info]: Criando pool de conexões
+2023-12-12 08:31:51.155 | com.example.Product.ServerInitializer.buildConnections(ServerInitializer.java:77) |  - [info]: Pool de conexões inicializado
+2023-12-12 08:31:51.167 | com.example.Product.ServerInitializer.onStart(ServerInitializer.java:97) |  - [info]: Transaction Isolation: read committed
+2023-12-12 08:31:51.168 | com.example.Product.ServerInitializer.init(ServerInitializer.java:88) |  - [info]: Aplicação inicializada
+2023-12-12 09:43:24.208 | com.example.Product.ServerInitializer.init(ServerInitializer.java:81) |  - [info]: Inicializando Aplicação
+2023-12-12 09:43:24.216 | com.example.Product.ServerInitializer.buildConfiguration(ServerInitializer.java:40) |  - [info]: Carregando configurações
+2023-12-12 09:43:24.223 | com.example.Product.ServerInitializer.buildConfiguration(ServerInitializer.java:42) |  - [info]: Configurações carregadas
+2023-12-12 09:43:24.224 | com.example.Product.ServerInitializer.buildConfiguration(ServerInitializer.java:43) |  - [info]: Versão: 2.0.0.05
+2023-12-12 09:43:24.224 | com.example.Product.ServerInitializer.logConfig(ServerInitializer.java:49) |  - [info]: db.type: Postgres
+2023-12-12 09:43:24.225 | com.example.Product.ServerInitializer.logConfig(ServerInitializer.java:50) |  - [info]: db.host: localhost
+2023-12-12 09:43:24.225 | com.example.Product.ServerInitializer.logConfig(ServerInitializer.java:51) |  - [info]: db.port: 5433
+2023-12-12 09:43:24.225 | com.example.Product.ServerInitializer.logConfig(ServerInitializer.java:52) |  - [info]: db.name: postgres
+2023-12-12 09:43:24.225 | com.example.Product.ServerInitializer.logConfig(ServerInitializer.java:53) |  - [info]: db.user: postgres
+2023-12-12 09:43:24.226 | com.example.Product.ServerInitializer.logConfig(ServerInitializer.java:54) |  - [info]: db.tnsName: null
+2023-12-12 09:43:24.227 | com.example.Product.ServerInitializer.logConfig(ServerInitializer.java:55) |  - [info]: db.serviceName: 
+2023-12-12 09:43:24.227 | com.example.Product.ServerInitializer.logConfig(ServerInitializer.java:56) |  - [info]: db.instance: 
+2023-12-12 09:43:24.227 | com.example.Product.ServerInitializer.logConfig(ServerInitializer.java:57) |  - [info]: db.maxConnections: 5
+2023-12-12 09:43:24.227 | com.example.Product.ServerInitializer.logParalelismConfig(ServerInitializer.java:65) |  - [info]: Máximo de conexões: 5
+2023-12-12 09:43:24.228 | com.example.Product.ServerInitializer.logParalelismConfig(ServerInitializer.java:66) |  - [info]: Núcleos lógicos: 4
+2023-12-12 09:43:24.228 | com.example.Product.ServerInitializer.buildConnections(ServerInitializer.java:75) |  - [info]: Criando pool de conexões
+2023-12-12 09:43:24.671 | com.example.Product.ServerInitializer.buildConnections(ServerInitializer.java:77) |  - [info]: Pool de conexões inicializado
+2023-12-12 09:43:24.676 | com.example.Product.ServerInitializer.onStart(ServerInitializer.java:97) |  - [info]: Transaction Isolation: read committed
+2023-12-12 09:43:24.677 | com.example.Product.ServerInitializer.init(ServerInitializer.java:88) |  - [info]: Aplicação inicializada

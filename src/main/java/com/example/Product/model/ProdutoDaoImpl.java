@@ -1,11 +1,9 @@
 package com.example.Product.model;
 
-import br.framework.classes.DataBase.EntityClass;
 import br.framework.classes.DataBase.EntityManager;
-import br.framework.classes.DataBase.QueryBuilder;
-import br.framework.classes.DataBase.Transaction;
 import br.framework.classes.helpers.Types;
 import br.framework.interfaces.IConnection;
+import br.framework.interfaces.IEntityClass;
 import com.example.Product.model.dto.ProdutoDto;
 import com.example.Product.model.entity.Produto;
 
@@ -15,6 +13,7 @@ public class ProdutoDaoImpl implements ProdutoDao{
 
     private final IConnection connection;
     private EntityManager manager;
+    private IEntityClass produto;
 
     public ProdutoDaoImpl(IConnection connection){
         this.connection = connection;
