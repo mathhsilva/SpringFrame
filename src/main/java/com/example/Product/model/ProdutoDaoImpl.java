@@ -49,10 +49,4 @@ public class ProdutoDaoImpl implements ProdutoDao{
                        .addEntity(produto)
                        .commit();
     }
-
-    @Override
-    public Produto criarProduto(ProdutoDto novoProduto) throws Exception {
-        return null;
-
-    }
 }

@@ -30,6 +30,9 @@ public class ProdutoBusiness {
         return null;
     }
 
+    public static void criarProduto() {
+    }
+
     private Produto getProduto(String id) throws Exception {
         return this.dao.getProduto(id);
     }

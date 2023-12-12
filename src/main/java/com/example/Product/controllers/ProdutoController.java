@@ -23,9 +23,4 @@ public class ProdutoController {
         return ProdutoBusiness.getProdutoRequest(id);
     }
 
-    @PostMapping("")
-    public ResponseEntity<String> criarProduto(@RequestBody ProdutoDto novoPoroduto) {
-        return  ResponseEntity.ok().build();
-    }
-
 }

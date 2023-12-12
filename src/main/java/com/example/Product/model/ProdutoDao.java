@@ -10,5 +10,4 @@ public interface ProdutoDao {
     Produto getProduto(String id) throws Exception;
     void save (Produto produto) throws Exception;
     void delete (Produto produto) throws Exception;
-    Produto criarProduto(ProdutoDto novoProduto) throws Exception;
 }
