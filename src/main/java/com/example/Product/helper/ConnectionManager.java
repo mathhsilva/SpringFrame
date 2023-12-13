@@ -287,7 +287,7 @@ public class ConnectionManager {
         return result;
     }
 
-    public static synchronized void setApplicationName(IConnection connection, boolean noPooled) {
+    public static synchronized void setApplicationName(IConnection connection, boolean noPooled) throws SQLException {
         if (connection.getProperties().getServerType()== Types.DataBase.Postgres) {
             ConnectionManager.logIfDebug("Inicio do setApplicationName");
             String versao = Configuration.getInstance().getVersion();
