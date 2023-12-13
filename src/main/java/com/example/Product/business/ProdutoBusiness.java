@@ -36,6 +36,7 @@ public class ProdutoBusiness {
                 produto.getId().setValue(novoProduto.getId());
                 produto.getName().setValue(novoProduto.getName());
                 produto.getPrice().setValue(novoProduto.getPrice());
+                novoProduto.setId(produto.getId().getValue());
                 business.save(produto);
                 return novoProduto;
             } finally {
