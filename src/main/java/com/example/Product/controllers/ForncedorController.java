@@ -1,11 +1,10 @@
 package com.example.Product.controllers;
 
 import com.example.Product.business.FornecedorBusiness;
+import com.example.Product.model.FornecedorDaoImpl;
 import com.example.Product.model.dto.FornecedorDto;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.example.Product.model.entity.Fornecedor;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -20,6 +19,11 @@ public class ForncedorController {
     @GetMapping("/{id}")
     public FornecedorDto getFornecedor(@PathVariable Integer id) {
         return FornecedorBusiness.getFornecedorRequest(id);
+    }
+
+    @PostMapping("")
+    public FornecedorDto postFornecedor(@RequestBody FornecedorDto fornecedor){
+        return FornecedorBusiness.criarFornecedor(fornecedor);
     }
 
 }
