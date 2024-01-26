@@ -7,7 +7,6 @@ import com.example.Product.model.FornecedorDao;
 import com.example.Product.model.FornecedorDaoImpl;
 import com.example.Product.model.dto.FornecedorDto;
 import com.example.Product.model.entity.Fornecedor;
-import com.example.Product.model.entity.Produto;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +19,7 @@ public class FornecedorBusiness {
 
     public FornecedorBusiness(IConnection connection) {
         this.connection = connection;
-        this.dao = new FornecedorDaoImpl(connection);
+        this.dao = new FornecedorDaoImpl(connection, connection);
     }
 
     public static List<FornecedorDto> getFornecedoresRequest() {

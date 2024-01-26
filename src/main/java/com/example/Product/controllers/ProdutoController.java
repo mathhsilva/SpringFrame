@@ -16,7 +16,6 @@ public class ProdutoController {
 
     @GetMapping("")
     public List<ProdutoDto> getProdutos() {
-
         return ProdutoBusiness.getProdutosRequest();
     }
 
@@ -25,7 +24,7 @@ public class ProdutoController {
         return ProdutoBusiness.getProdutoRequest(id);
     }
 
-    @PostMapping("")
+    @PostMapping("/gravar")
     public ProdutoDto postProduto(@RequestBody ProdutoDto produto) {
         return ProdutoBusiness.criarProduto(produto);
     }

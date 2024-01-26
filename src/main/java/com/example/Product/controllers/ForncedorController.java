@@ -21,7 +21,7 @@ public class ForncedorController {
         return FornecedorBusiness.getFornecedorRequest(id);
     }
 
-    @PostMapping("")
+    @PostMapping("/incluir")
     public FornecedorDto postFornecedor(@RequestBody FornecedorDto fornecedor){
         return FornecedorBusiness.criarFornecedor(fornecedor);
     }

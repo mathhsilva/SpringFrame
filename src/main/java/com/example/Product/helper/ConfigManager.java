@@ -93,7 +93,7 @@ public class ConfigManager {
             numConnections = 0;
         }
         if (numConnections<5) {
-            numConnections = 5;
+            numConnections = 20;
         }
 
         properties.setMaxConnections(numConnections);
