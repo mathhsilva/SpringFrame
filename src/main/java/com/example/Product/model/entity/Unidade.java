@@ -14,16 +14,11 @@ import lombok.Setter;
 @Setter
 @TableAnnotation(tableName = "unidades", prefix = "unid_")
 public class Unidade extends EntityClass {
-    @ID(index = 0)
-    @NonNull
+
     private Description cnpj;
-    @NonNull
     private Description codUnidade;
-    @NonNull
     private Description ibge;
-    @NonNull
     private Description razaoSocial;
-    @NonNull
     private Description codScanntech;
 
     public Unidade(String condition){
