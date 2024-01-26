@@ -39,7 +39,7 @@ public class MovimentoBusiness {
     private List<MovimentoDto> getMovimentos() throws Exception {
         List<Movimento> movimentos = this.dao.getMovimentos();
         List<MovimentoDto> result = new ArrayList<MovimentoDto>();
-        movimentos.forEach (movimento -> result.add(new MovimentoDto(movimento)));
+        movimentos.forEach(movimento -> result.add(new MovimentoDto(movimento)));
         return result;
     }
 }

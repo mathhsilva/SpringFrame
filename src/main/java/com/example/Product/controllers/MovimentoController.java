@@ -11,8 +11,8 @@ import java.util.*;
 @RestController
 @RequestMapping("/movimentos")
 public class MovimentoController {
-@GetMapping("")
-    public List<MovimentoDto> getMovimentos (){
+    @GetMapping("")
+    public List<MovimentoDto> getMovimentos() {
         return MovimentoBusiness.getMovimentosRequest();
     }
 

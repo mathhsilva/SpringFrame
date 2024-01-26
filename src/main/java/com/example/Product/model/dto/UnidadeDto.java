@@ -13,7 +13,7 @@ public class UnidadeDto {
     private String razaoSocial;
     private String codScanntech;
 
-    public UnidadeDto(Unidade unidades){
+    public UnidadeDto(Unidade unidades) {
         this.cnpj = unidades.getCnpj().getValue();
         this.codUnidade = unidades.getCodUnidade().getValue();
         this.ibge = unidades.getIbge().getValue();
@@ -21,7 +21,7 @@ public class UnidadeDto {
         this.codScanntech = unidades.getCodScanntech().getValue();
     }
 
-    public UnidadeDto(){
+    public UnidadeDto() {
 
     }
 

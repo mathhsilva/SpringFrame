@@ -14,7 +14,7 @@ public class MovimentoDaoImpl implements MovimentoDao {
     private EntityManager manager;
     private IEntityClass movimento;
 
-    public MovimentoDaoImpl(IConnection connection){
+    public MovimentoDaoImpl(IConnection connection) {
         this.connection = connection;
         this.manager = new EntityManager(connection);
     }

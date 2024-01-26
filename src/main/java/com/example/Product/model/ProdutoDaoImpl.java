@@ -9,16 +9,17 @@ import com.example.Product.model.entity.Produto;
 
 import java.util.List;
 
-public class ProdutoDaoImpl implements ProdutoDao{
+public class ProdutoDaoImpl implements ProdutoDao {
 
     private final IConnection connection;
     private EntityManager manager;
     private IEntityClass produto;
 
-    public ProdutoDaoImpl(IConnection connection){
+    public ProdutoDaoImpl(IConnection connection) {
         this.connection = connection;
         this.manager = new EntityManager(connection);
     }
+
     @Override
     public List<Produto> getProdutos() throws Exception {
         return this.manager.queryFactory(new Produto());
@@ -37,8 +38,8 @@ public class ProdutoDaoImpl implements ProdutoDao{
             produtoDb.setCondition("id = " + produto.getId().getValue());
         }
         this.connection.getNewTransaction()
-                       .addEntity(produto)
-                       .commit();
+                .addEntity(produto)
+                .commit();
     }
 
     @Override
@@ -46,8 +47,8 @@ public class ProdutoDaoImpl implements ProdutoDao{
         produto.setOperation(Types.Operations.Delete);
         produto.setCondition("id = " + produto.getId().getValue());
         this.connection.getNewTransaction()
-                       .addEntity(produto)
-                       .commit();
+                .addEntity(produto)
+                .commit();
     }
 
     @Override

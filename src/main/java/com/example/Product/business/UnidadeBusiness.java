@@ -62,12 +62,12 @@ public class UnidadeBusiness {
         this.dao.save(unidades);
     }
 
-    public UnidadeBusiness(IConnection connection){
+    public UnidadeBusiness(IConnection connection) {
         this.connection = connection;
         this.dao = new UnidadeDaoImpl(connection);
     }
 
-    public static UnidadeDto criarUnidade(UnidadeDto novaUnidade){
+    public static UnidadeDto criarUnidade(UnidadeDto novaUnidade) {
         try {
             IConnection connection = ConnectionManager.newConnection();
             try {
